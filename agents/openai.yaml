@@ -1,0 +1,7 @@
+interface:
+  display_name: "会话整理"
+  short_description: "按上下文整理 Codex 任务标题"
+  default_prompt: "Use $session-title-organizer to preview and safely rename Codex task titles for a selected scope."
+
+policy:
+  allow_implicit_invocation: true
