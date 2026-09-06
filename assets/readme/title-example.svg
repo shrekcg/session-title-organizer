@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">会话整理标题优化案例：蓝图技术风</title>
+  <desc id="desc">说明性示例：从泛化任务名称提炼用户目标和最终交付，生成 MMDD、类型、主题格式的侧边栏标题。</desc>
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#2457D6" stroke-opacity="0.09"/></pattern>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F9FBFD"/><stop offset="1" stop-color="#EDF2F7"/></linearGradient>
+  </defs>
+  <rect width="1200" height="560" rx="28" fill="#EAF0F6"/><rect width="1200" height="560" rx="28" fill="url(#grid)"/>
+  <rect x="28" y="28" width="1144" height="504" rx="24" fill="url(#paper)" stroke="#17212B" stroke-opacity="0.18"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+    <text x="68" y="76" fill="#2457D6" font-size="14" font-weight="750" letter-spacing="2.2">BLUEPRINT / 说明性示例</text>
+    <text x="68" y="128" fill="#17212B" font-size="34" font-weight="780">从“看不出重点”到“一眼知道做了什么”</text>
+    <text x="68" y="162" fill="#5E6C78" font-size="18">把对话变成可检索、可判断、可回看的侧边栏索引。</text>
+    <g transform="translate(68 204)"><rect width="430" height="194" fill="#FFFDF9" stroke="#C47662" stroke-width="2"/><path d="M0 48H430M28 153H402" stroke="#17212B" stroke-opacity="0.14"/><circle cx="28" cy="24" r="5" fill="#C47662"/><text x="48" y="30" fill="#A25A49" font-size="15" font-weight="750">原始名称 · 信息不足</text><text x="28" y="91" fill="#17212B" font-size="24" font-weight="700">新功能讨论</text><text x="28" y="126" fill="#5E6C78" font-size="16">无法快速判断：对象、动作、交付物</text><text x="28" y="178" fill="#A25A49" font-size="14" font-weight="750" letter-spacing="1.4">LOW SIGNAL</text></g>
+    <g transform="translate(520 274)"><path d="M0 26H90M76 12L92 26L76 40" fill="none" stroke="#C47662" stroke-width="2"/><text x="5" y="67" fill="#A25A49" font-size="13" font-weight="750" letter-spacing="1.4">READ THE THREAD</text></g>
+    <g transform="translate(702 204)"><rect width="430" height="194" fill="#E8F0FF" stroke="#2457D6" stroke-width="2"/><path d="M0 48H430M28 153H402" stroke="#2457D6" stroke-opacity="0.25"/><circle cx="28" cy="24" r="5" fill="#2457D6"/><text x="48" y="30" fill="#2457D6" font-size="15" font-weight="750">新名称 · 可快速识别</text><text x="28" y="91" fill="#17212B" font-size="21" font-weight="750">0901 | 设计 | 界面对齐检查</text><text x="28" y="126" fill="#4F6070" font-size="16">日期 · 类型 · 对象 + 结果</text><text x="28" y="178" fill="#2457D6" font-size="14" font-weight="750" letter-spacing="1.4">HIGH SIGNAL</text></g>
+    <text x="68" y="438" fill="#5E6C78" font-size="14" font-weight="750" letter-spacing="1.4">EVIDENCE USED</text>
+    <g font-size="15" fill="#34424B"><rect x="68" y="460" width="220" height="36" rx="4" fill="#FFFDF9" stroke="#17212B" stroke-opacity="0.18"/><text x="86" y="484">用户目标：视觉对齐</text><rect x="300" y="460" width="220" height="36" rx="4" fill="#FFFDF9" stroke="#17212B" stroke-opacity="0.18"/><text x="318" y="484">最终交付：设计检查</text><rect x="532" y="460" width="220" height="36" rx="4" fill="#FFFDF9" stroke="#17212B" stroke-opacity="0.18"/><text x="550" y="484">来源：对话内容</text></g>
+    <text x="1128" y="486" text-anchor="end" fill="#7C8994" font-size="13" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">STYLE A · PRECISE / TECHNICAL</text>
+  </g>
+</svg>
