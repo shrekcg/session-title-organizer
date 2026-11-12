@@ -4,7 +4,7 @@ description: 「会话整理」把会话/任务标题整理成「MMDD | 类型 |
 compatibility: 需要宿主提供“列会话 / 读内容 / 改名”中的至少一项；一项都没有时进入纯命名模式。
 disable-model-invocation: true
 metadata:
-  version: "3.0"
+  version: "3.1"
 ---
 
 # 会话整理
@@ -61,6 +61,14 @@ metadata:
 | 其他 | 按工具名或关键词探测 | | |
 
 命中哪一套就只用哪一套，不混用。Cindy 当前会话优先 `set_current_session_title`（不需要 id）；项目范围只能按目录前缀。三项能力都没有 → 纯命名：给推荐标题 + 2 个备选 + 一句依据，并说明无法写入。
+
+**Cindy / Pi 的调用方式**：这些不是直接工具，也不在 `cindy_mcp_list_tools` 的 MCP 列表里，而是 `cindy_helper` 的原生能力。
+
+1. 发现：`cindy_helper.list_tools({query:"标题"})`。查询要用短词（`标题`、`会话`、`改名`），长句（如“会话标题重命名 session title rename”）会返回 0 条。
+2. 兜底：`cindy_helper.list_tools({name:"rename_sessions"})` 直接按工具名取。
+3. 执行：`cindy_helper.call_tool({name:"rename_sessions", args:{…}})`。
+
+**查询没命中不等于宿主不支持**：只翻 MCP 工具清单、或长句查询返回空，都不能当作“没有接口”的依据；必须至少试过短词和按名查，并明确拿到工具不存在的结果，才算该宿主没有这项能力。
 
 ## 可选能力（默认关闭）
 
