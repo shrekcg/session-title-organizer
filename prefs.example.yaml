@@ -1,0 +1,12 @@
+# 会话整理偏好。复制到 ~/.config/session-title-organizer/prefs.yaml 后修改。
+# 缺项回落默认值，写错不阻塞执行；解析顺序：本次请求 > 本文件 > 默认值。
+
+mode: inline        # inline（默认）| subagent（只有需要换模型时才用）
+model: inherit      # inherit = 跟主对话同模型；也可写 aliases 的键或宿主模型 id
+provider: null      # 同一模型挂在多个供应商下时必填
+aliases: {}         # 例：free: { pi: { model: group/free, provider: magpie-10eb6fc8 } }
+
+auto:
+  enabled: false    # 自动命名，默认关；开启需要宿主的定时任务或结束钩子
+  max_per_run: 10
+  min_interval_minutes: 60
